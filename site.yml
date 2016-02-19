@@ -1,0 +1,10 @@
+---
+# This playbook deploys or updates application stack.  
+
+- name: apply common configuration to nodes
+  hosts: ovh1.znanika.ru
+  remote_user: root
+
+  roles:
+    - dj-wasabi.zabbix-agent
+

@@ -1,0 +1,7 @@
+---
+# overrides for zabbix-agent
+
+zabbix_version: 2.4
+agent_server: zabbix
+agent_serveractive: zabbix
+

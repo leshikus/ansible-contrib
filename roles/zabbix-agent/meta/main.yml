@@ -1,0 +1,3 @@
+---
+dependencies:
+  - { role: dj-wasabi.zabbix-agent, sudo: yes }
