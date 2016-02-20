@@ -7,5 +7,11 @@ test "$USER" == root || {
 }
 
 yum install epel-release
-yum install ansible
+yum install ansible python-pip
+pip install zabbix-api
+
+rm /etc/ansible/hosts
+ln -s "$pdir/ansible/contrib/inventory/zabbix.py" /etc/ansible/hosts
+
+ansible-galaxy install dj-wasabi.zabbix-agent
 

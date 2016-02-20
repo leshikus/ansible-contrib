@@ -1,3 +1,7 @@
 ---
-- name: Creates directory for apt-repository
-  file: path=/etc/apt/sources.list.d state=directory
+- name: Update local repo cache and packages
+  apt_repository:
+    repo="deb http://debian/repo ./"
+    update_cache=yes
+  become_method: sudo
+

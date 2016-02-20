@@ -1,0 +1,10 @@
+---
+# file: hipervisors.yml
+
+#- hosts: Hypervisors
+- hosts: ovh2
+  roles:
+    - proxmox
+    - zabbix-agent
+    - snmpd
+

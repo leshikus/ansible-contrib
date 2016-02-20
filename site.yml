@@ -1,10 +1,19 @@
 ---
-# This playbook deploys or updates application stack.  
+# file: site.yml
 
-- name: apply common configuration to nodes
-  hosts: ovh1.znanika.ru
-  remote_user: root
+- include hipervisors.yml
 
-  roles:
-    - dj-wasabi.zabbix-agent
+#  tasks:
+#    ping
+
+# - hosts: webservers
+#   roles:
+# 
+# - hosts: dbservers
+#   roles:
+# 
+# - hosts: storages
+#   roles:
+# 
+
 
