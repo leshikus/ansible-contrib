@@ -1,7 +1,7 @@
 ---
 # file: site.yml
 
-- include: hipervisors.yml
+- include: hypervisors.yml
 
 #  tasks:
 #    ping

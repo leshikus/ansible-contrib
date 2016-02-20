@@ -3,8 +3,10 @@
 
 #- hosts: Hypervisors
 - hosts: ovh2
+  sudo: yes
   roles:
-    - proxmox
-    - zabbix-agent
-    - snmpd
+    - debian
+#    - proxmox
+#    - zabbix-agent
+#    - snmpd
 

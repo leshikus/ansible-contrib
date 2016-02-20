@@ -1,7 +1,8 @@
 ---
-- name: Update local repo cache and packages
+
+- name: Start using local repo
   apt_repository:
     repo="deb http://debian/repo ./"
     update_cache=yes
-  become_method: sudo
+  become: true
 
