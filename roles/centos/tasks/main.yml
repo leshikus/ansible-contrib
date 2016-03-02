@@ -8,6 +8,7 @@
     - vim
     - pcp
     - man
+    - lsof
 
 - name: install epel
   yum: name=epel-release update_cache=true
