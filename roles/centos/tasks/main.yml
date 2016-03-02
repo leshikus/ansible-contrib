@@ -1,30 +1,28 @@
 ---
-- hosts: db-91
-  tasks:
-    - name: install packages
-      yum: name={{ item }}
-      become: true
-      with_items:
-        - screen
-        - telnet
-        - vim
-        - pcp
-        - man
+- name: install packages
+  yum: name={{ item }}
+  become: true
+  with_items:
+    - screen
+    - telnet
+    - vim
+    - pcp
+    - man
 
-     - name: install epel
-       yum: name=epel-release update_cache=true
-       become: true
+- name: install epel
+  yum: name=epel-release update_cache=true
+  become: true
 
-     - name: add usability packages
-       yum: name={{ item }}
-       become: true
-       with_items:
-         - mc
-         - nano
-         - git
-         - mc
-         - nano
-         - vim
-         - git
-         - htop
+- name: add usability packages
+  yum: name={{ item }}
+  become: true
+  with_items:
+    - mc
+    - nano
+    - git
+    - mc
+    - nano
+    - vim
+    - git
+    - htop
 

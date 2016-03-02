@@ -1,12 +1,12 @@
 ---
 - name: Creates directory for apt-repository
   file: path=/etc/apt/sources.list.d state=directory
-  become_method: sudo
+  become: true
 
 - name: Remove packages from the standard Proxmox installation
   apt: name={{ item }} state=absent
   with_items:
     - bind9
     - bind9utils
-  become_method: sudo
+  become: true
 

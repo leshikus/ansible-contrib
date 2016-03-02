@@ -1,3 +1,3 @@
 ---
-snmpd_download_mibs: False
-snmpd_lldpd: False
+snmpd_download_mibs: false
+snmpd_lldpd: false
