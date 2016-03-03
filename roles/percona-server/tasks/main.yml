@@ -1,9 +1,12 @@
 - name: install percona repo
   yum: name="http://www.percona.com/downloads/percona-release/percona-release-0.0-1.x86_64.rpm"
   become: true
- 
-- name: install db client
-  yum: name=Percona-Server-client-56.x86_64
+
+- name: install db server
+  yum: name=Percona-Server-server-56.x86_64
   become: true
 
+- name: enable server
+  service: name=mysql enabled=on
+  become: true
 
