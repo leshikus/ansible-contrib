@@ -1,8 +1,7 @@
 ---
 # file: hipervisors.yml
 
-#- hosts: Hypervisors
-- hosts: ovh2
+- hosts: Hypervisors
   sudo: yes
   roles:
     - debian
