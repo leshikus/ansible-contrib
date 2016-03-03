@@ -1,0 +1,14 @@
+uid=0
+gid=0
+
+use chroot = yes
+read only = yes
+
+exclude = **\.log$ **/cache **/log **log\.*\.gz$ /tmp /SWAP /swap /proc /sys /dev /run /mnt /media /lost+found
+hosts allow = {{ rsync_server }}
+hosts deny = *
+
+[root]
+    path = /
+    comment = root
+

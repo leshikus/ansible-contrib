@@ -1,0 +1,8 @@
+---
+- template: src=rsyncd.conf.j2 dest=/etc/rsyncd.conf
+  become: true
+
+- service: name=rsync enabled=on state=started
+  become: true
+  
+
