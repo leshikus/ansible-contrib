@@ -6,6 +6,4 @@
   roles:
     - debian
     - proxmox
-    - zabbix-agent
-    - snmpd
 

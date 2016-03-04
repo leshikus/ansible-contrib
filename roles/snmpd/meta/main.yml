@@ -1,3 +1,0 @@
----
-dependencies:
-  - { role: debops.snmpd, sudo: no }

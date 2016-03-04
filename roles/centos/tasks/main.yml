@@ -6,8 +6,9 @@
     - screen
     - telnet
     - vim
-    - pcp
     - man
+    - atop
+    - sysstat
     - lsof
 
 - name: install epel
