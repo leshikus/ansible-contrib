@@ -1,5 +1,7 @@
 ---
-# overrides for zabbix-agent
+# overrides for dj-wasabi.zabbix-agent
 
-snmpd_download_mibs: False
+zabbix_version: 2.4
+agent_server: zabbix
+agent_serveractive: zabbix
 
