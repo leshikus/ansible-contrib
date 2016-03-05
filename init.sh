@@ -25,7 +25,7 @@ update_git_repo() (
     git pull
   else
     cd "$pdir"
-    git clone "$url_git_ansible"
+    git clone "$repo_url"
   fi
 )
 
