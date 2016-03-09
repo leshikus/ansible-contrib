@@ -1,3 +1,4 @@
 ---
 dependencies:
-  - { role: debops.snmpd, become: false }
+#- debops.snmpd
+  - debops.snmpd
