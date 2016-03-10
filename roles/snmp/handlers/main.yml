@@ -1,0 +1,9 @@
+---
+
+- name: Restart snmpd
+  service:
+    name: snmpd
+    enabled: true
+    state: restarted
+  become: true
+

@@ -1,4 +1,0 @@
----
-dependencies:
-#- debops.snmpd
-  - debops.snmpd
