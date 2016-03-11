@@ -8,14 +8,8 @@
     - snmpd
   notify: [ 'Restart snmpd' ]
 
-- name: Install lm-sensor package for Debian
-  apt: name=lm-sensors state=present
-  become: true
-  when: "(ansible_virtualization_role is undefined or ansible_virtualization_role not in [ 'guest' ])" 
-  notify: [ 'Restart snmpd' ]
-
-- name: Configure snmpd service
-  lineinfile: dest=/etc/snmp/snmpd.conf regexp='^ rocommunity public .*' line=' rocommunity public {{ snmpd_allow | join(" ") }}'
+- name: Configure snmpd.conf agentAddress
+  template: dest=/etc/snmp/snmpd.conf src=snmpd.conf mode=600
   become: true
   notify: [ 'Restart snmpd' ]
 

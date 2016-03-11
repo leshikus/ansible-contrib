@@ -1,4 +1,4 @@
 ---
 
-snmpd_allow: [ localhost, zabbix ]
+snmpd_allow: zabbix
 
